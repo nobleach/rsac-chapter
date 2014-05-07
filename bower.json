@@ -1,0 +1,22 @@
+{
+  "name": "rasc-chapter",
+  "version": "0.0.1",
+  "description": "Chapter element for use in rsac-toc",
+  "authors": [
+    "Jim Wharton"
+  ],
+  "license": "MIT",
+  "main": "rsac-chapter.html",
+  "keywords": [
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#~0.2.3",
+    "polymer": "Polymer/polymer#~0.2.3"
+  }
+}

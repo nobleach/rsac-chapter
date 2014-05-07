@@ -1,0 +1,72 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="rsac-chapter" attributes="color src altText href">
+  <template>
+    <style>
+      div.chapter {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: #ccc;
+        overflow: hidden; 
+        cursor:pointer;
+      }
+      div.chapter img {
+        position: absolute; 
+      }
+      div.chapter .title {
+        position: relative;
+        top: 60px;
+        left: 12px;
+        color: #fff;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: 100;
+        font-size: 26px; 
+      }
+      div.chapter .page-link {
+        position: absolute;
+        top: 43px;
+        right: 12px;
+      }
+      div.chapter div.back {
+        display:none;
+      }
+      :host.active div.chapter div.back {
+        display:block;
+        position:absolute;
+        top:10px;
+        left:10px;
+        width:120px;
+        height:23px;
+        background: rgba(255,255,255,0.8);
+        text-align: center;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: 100;
+        font-size: 16px; 
+        color:#444;
+        padding-top:5px;
+        z-index: 500;
+      }
+      :host.active div.chapter .page-link {
+        display:none;
+      }
+      :host.out {
+        display:none;
+      }
+    </style>
+    <div class="chapter" id="chapter1" style="background:{{color}}" on-click={{selectChapter}}>
+      <img src="{{src}}" alt="{{altText}}">
+      <div class="back" id="back-button">&lt; Back</div>
+      <span class="title">
+        <content></content>
+      </span>
+      <img class="page-link" src="img/right-arrow.png" alt="right arrow page link">
+    </div>
+  </template>
+  <script>
+    Polymer('rsac-chapter', {
+
+    });
+  </script>
+</polymer-element>
+
