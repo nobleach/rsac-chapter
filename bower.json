@@ -1,6 +1,6 @@
 {
   "name": "rasc-chapter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Chapter element for use in rsac-toc",
   "authors": [
     "Jim Wharton"
@@ -20,8 +20,8 @@
     "polymer": "Polymer/polymer#~0.2.3"
   },
   "homepage": "https://github.com/nobleach/rsac-chapter",
-  "_release": "0.0.4",
+  "_release": "0.0.5",
   "_source": "git://github.com/nobleach/rsac-chapter.git",
-  "_target": "~0.0.4",
+  "_target": "~0.0.5",
   "_originalSource": "rsac-chapter"
 }
