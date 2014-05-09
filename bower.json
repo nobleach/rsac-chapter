@@ -20,13 +20,8 @@
     "polymer": "Polymer/polymer#~0.2.3"
   },
   "homepage": "https://github.com/nobleach/rsac-chapter",
-  "_release": "0.0.1",
-  "_resolution": {
-    "type": "version",
-    "tag": "v0.0.1",
-    "commit": "cd3d2c473390cdf235a8c415b643c672568274f1"
-  },
+  "_release": "0.0.2",
   "_source": "git://github.com/nobleach/rsac-chapter.git",
-  "_target": "~0.0.1",
+  "_target": "~0.0.2",
   "_originalSource": "rsac-chapter"
 }
