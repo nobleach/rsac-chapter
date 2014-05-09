@@ -31,10 +31,13 @@
       div.chapter div.back {
         display:none;
       }
+      :host.active div.chapter {
+        margin-top:-50px;
+      }
       :host.active div.chapter div.back {
         display:block;
         position:absolute;
-        top:10px;
+        bottom:14px;
         left:10px;
         width:120px;
         height:23px;
@@ -49,6 +52,9 @@
       }
       :host.active div.chapter .page-link {
         display:none;
+      }
+      :host.active div.chapter .title {
+        left:142px;
       }
       :host.out {
         display:none;
